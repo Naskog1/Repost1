@@ -1,0 +1,1701 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook source-build='2021.2.1 (20212.21.0712.0907)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='DIM_Counties+ (LucidLink)' inline='true' name='federated.1yry0ys0920efw1euoqic0bic55p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DESKTOP-71H227B' name='sqlserver.00fp0wa18ksu9p12tspgk17yh5u7'>
+            <connection authentication='sspi' class='sqlserver' dbname='LucidLink' minimum-driver-version='SQL Server Native Client 10.0' odbc-native-protocol='yes' one-time-sql='' server='DESKTOP-71H227B' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='sqlserver.00fp0wa18ksu9p12tspgk17yh5u7' name='DIM_Counties' table='[dbo].[DIM_Counties]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='sqlserver.00fp0wa18ksu9p12tspgk17yh5u7' name='DIM_Counties' table='[dbo].[DIM_Counties]' type='table' />
+          <relation connection='sqlserver.00fp0wa18ksu9p12tspgk17yh5u7' name='FAC_firewall_blocked' table='[dbo].[FAC_firewall_blocked]' type='table' />
+          <relation connection='sqlserver.00fp0wa18ksu9p12tspgk17yh5u7' name='DIM_Date' table='[dbo].[DIM_Date]' type='table' />
+          <relation connection='sqlserver.00fp0wa18ksu9p12tspgk17yh5u7' name='DIM_MAC' table='[dbo].[DIM_MAC]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[CC]' value='[FAC_firewall_blocked].[CC]' />
+          <map key='[DPT]' value='[FAC_firewall_blocked].[DPT]' />
+          <map key='[ETL_Insert (FAC_firewall_blocked)]' value='[FAC_firewall_blocked].[ETL_Insert]' />
+          <map key='[ETL_Insert]' value='[DIM_Counties].[ETL_Insert]' />
+          <map key='[ETL_Update (FAC_firewall_blocked)]' value='[FAC_firewall_blocked].[ETL_Update]' />
+          <map key='[ETL_Update]' value='[DIM_Counties].[ETL_Update]' />
+          <map key='[MAC (DIM_MAC)]' value='[DIM_MAC].[MAC]' />
+          <map key='[MAC]' value='[FAC_firewall_blocked].[MAC]' />
+          <map key='[Machine Name]' value='[DIM_MAC].[Machine Name]' />
+          <map key='[TheDate (DIM_Date)]' value='[DIM_Date].[TheDate]' />
+          <map key='[TheDate]' value='[FAC_firewall_blocked].[TheDate]' />
+          <map key='[TheDayName]' value='[DIM_Date].[TheDayName]' />
+          <map key='[TheDayOfWeek]' value='[DIM_Date].[TheDayOfWeek]' />
+          <map key='[TheDayOfYear]' value='[DIM_Date].[TheDayOfYear]' />
+          <map key='[TheDay]' value='[DIM_Date].[TheDay]' />
+          <map key='[TheFirstOfMonth]' value='[DIM_Date].[TheFirstOfMonth]' />
+          <map key='[TheISOWeek]' value='[DIM_Date].[TheISOWeek]' />
+          <map key='[TheLastOfYear]' value='[DIM_Date].[TheLastOfYear]' />
+          <map key='[TheMonthName]' value='[DIM_Date].[TheMonthName]' />
+          <map key='[TheMonth]' value='[DIM_Date].[TheMonth]' />
+          <map key='[TheQuarter]' value='[DIM_Date].[TheQuarter]' />
+          <map key='[TheWeek]' value='[DIM_Date].[TheWeek]' />
+          <map key='[TheYear]' value='[DIM_Date].[TheYear]' />
+          <map key='[TimeStamp]' value='[FAC_firewall_blocked].[TimeStamp]' />
+          <map key='[cc]' value='[DIM_Counties].[cc]' />
+          <map key='[country]' value='[DIM_Counties].[country]' />
+          <map key='[id]' value='[FAC_firewall_blocked].[id]' />
+          <map key='[ip_number]' value='[FAC_firewall_blocked].[ip_number]' />
+          <map key='[message]' value='[FAC_firewall_blocked].[message]' />
+          <map key='[message_ip]' value='[FAC_firewall_blocked].[message_ip]' />
+          <map key='[protocol]' value='[FAC_firewall_blocked].[protocol]' />
+          <map key='[timestamp_org]' value='[FAC_firewall_blocked].[timestamp_org]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>cc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cc]</local-name>
+            <parent-name>[DIM_Counties]</parent-name>
+            <remote-alias>cc</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Counties_8E628A8B3E374E4A93C06D2F61061039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[DIM_Counties]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Counties_8E628A8B3E374E4A93C06D2F61061039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ETL_Insert</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ETL_Insert]</local-name>
+            <parent-name>[DIM_Counties]</parent-name>
+            <remote-alias>ETL_Insert</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Counties_8E628A8B3E374E4A93C06D2F61061039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ETL_Update</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ETL_Update]</local-name>
+            <parent-name>[DIM_Counties]</parent-name>
+            <remote-alias>ETL_Update</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Counties_8E628A8B3E374E4A93C06D2F61061039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp_org</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[timestamp_org]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>timestamp_org</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TimeStamp</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[TimeStamp]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>TimeStamp</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[TheDate]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>TheDate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>message</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[message]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>message</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2500</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>message_ip</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[message_ip]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>message_ip</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2500</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ip_number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ip_number]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>ip_number</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAC</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MAC]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>MAC</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2500</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>protocol</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[protocol]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>protocol</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2500</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DPT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DPT]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>DPT</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2500</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>CC</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ETL_Insert</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ETL_Insert (FAC_firewall_blocked)]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>ETL_Insert</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ETL_Update</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[ETL_Update (FAC_firewall_blocked)]</local-name>
+            <parent-name>[FAC_firewall_blocked]</parent-name>
+            <remote-alias>ETL_Update</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[TheDate (DIM_Date)]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheDate</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheDay</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[TheDay]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheDay</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheDayName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TheDayName]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheDayName</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheWeek</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[TheWeek]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheWeek</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheISOWeek</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[TheISOWeek]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheISOWeek</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheDayOfWeek</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[TheDayOfWeek]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheDayOfWeek</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheMonth</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[TheMonth]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheMonth</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheMonthName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TheMonthName]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheMonthName</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheQuarter</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[TheQuarter]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheQuarter</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheYear</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[TheYear]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheYear</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheFirstOfMonth</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[TheFirstOfMonth]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheFirstOfMonth</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheLastOfYear</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[TheLastOfYear]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheLastOfYear</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TheDayOfYear</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[TheDayOfYear]</local-name>
+            <parent-name>[DIM_Date]</parent-name>
+            <remote-alias>TheDayOfYear</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAC</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MAC (DIM_MAC)]</local-name>
+            <parent-name>[DIM_MAC]</parent-name>
+            <remote-alias>MAC</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2500</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_MAC_719DF9316AAD40CAB123740A244EE863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Machine Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Machine Name]</local-name>
+            <parent-name>[DIM_MAC]</parent-name>
+            <remote-alias>Machine Name</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_MAC_719DF9316AAD40CAB123740A244EE863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='CountD' datatype='string' name='[MAC]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[TheDayOfWeek]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[TheDayOfYear]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[TheDay]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[TheISOWeek]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[TheMonth]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[TheQuarter]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[TheWeek]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[TheYear]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='DIM_Counties' datatype='table' name='[__tableau_internal_object_id__].[DIM_Counties_8E628A8B3E374E4A93C06D2F61061039]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='DIM_Date' datatype='table' name='[__tableau_internal_object_id__].[DIM_Date_40E3231D930E45E48B7AABCF700F78AB]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='DIM_MAC' datatype='table' name='[__tableau_internal_object_id__].[DIM_MAC_719DF9316AAD40CAB123740A244EE863]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='FAC_firewall_blocked' datatype='table' name='[__tableau_internal_object_id__].[FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC]' role='measure' type='quantitative' />
+      <column datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[id]' role='dimension' type='nominal' />
+      <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:country:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Anguilla&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Bosnia and Herzegovina&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Guernsey&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Malawi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Namibia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tonga&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;-&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cayman Islands&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kiribati&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lesotho&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Moldova (Republic of)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Saint Kitts and Nevis&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;South Georgia and The South Sandwich Islands&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Belize&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cote D ivoire&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Equatorial Guinea&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Grenada&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Montserrat&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Saint Vincent and The Grenadines&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sudan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Aruba&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Brunei Darussalam&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Gibraltar&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Haiti&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;New Caledonia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Serbia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tanzania, United Republic of&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Antigua and Barbuda&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Botswana&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Falkland Islands (Malvinas)&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Isle of Man&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mayotte&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nauru&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;San Marino&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Syrian Arab Republic&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;American Samoa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Eritrea&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Guadeloupe&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;North Macedonia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Palestine, State of&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Samoa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Suriname&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;United States of America&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bhutan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Congo (Democratic Republic of the)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Djibouti&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Norfolk Island&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Somalia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Taiwan (Province of China)&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Central African Republic&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Liberia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Monaco&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Saint Lucia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;South Sudan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Tunisia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bahamas&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cabo Verde&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Czechia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jersey&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kyrgyzstan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Madagascar&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Seychelles&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Wallis and Futuna&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Andorra&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bolivia (Plurinational State of)&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Guam&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Macao&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mozambique&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Svalbard and Jan Mayen&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Venezuela (Bolivarian Republic of)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Benin&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Congo&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cuba&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Holy See&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Marshall Islands&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Palau&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Puerto Rico&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Turks and Caicos Islands&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Burkina Faso&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Curacao&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Korea (Republic of)&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Martinique&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Nicaragua&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sint Maarten (Dutch Part)&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Virgin Islands (British)&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bermuda&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fiji&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;French Polynesia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Lao People s Democratic Republic&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Niue&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Sierra Leone&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Solomon Islands&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Yemen&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Barbados&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cook Islands&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dominica&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Micronesia (Federated States of)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Saint Barthelemy&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tajikistan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Timor-Leste&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Comoros&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Faroe Islands&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Guinea-Bissau&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Maldives&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Northern Mariana Islands&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sao Tome and Principe&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Trinidad and Tobago&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Angola&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bonaire, Sint Eustatius and Saba&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Eswatini&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Guatemala&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Iran (Islamic Republic of)&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mauritius&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Myanmar&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Papua New Guinea&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tokelau&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;United States Minor Outlying Islands&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Viet Nam&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Aland Islands&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Chad&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Gambia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Korea (Democratic People s Republic of)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Libya&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Saint Martin (French Part)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Togo&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Burundi&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;French Guiana&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mauritania&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Niger&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Reunion&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Virgin Islands (U.S.)&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Armenia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;British Indian Ocean Territory&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Guyana&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Senegal&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Turkmenistan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Vanuatu&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bahrain&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Costa Rica&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;El Salvador&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Greenland&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Hong Kong&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Liechtenstein&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Montenegro&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Saint Pierre and Miquelon&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Tuvalu&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Bulgaria&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='DIM_Counties' id='DIM_Counties_8E628A8B3E374E4A93C06D2F61061039'>
+            <properties context=''>
+              <relation connection='sqlserver.00fp0wa18ksu9p12tspgk17yh5u7' name='DIM_Counties' table='[dbo].[DIM_Counties]' type='table' />
+            </properties>
+          </object>
+          <object caption='DIM_Date' id='DIM_Date_40E3231D930E45E48B7AABCF700F78AB'>
+            <properties context=''>
+              <relation connection='sqlserver.00fp0wa18ksu9p12tspgk17yh5u7' name='DIM_Date' table='[dbo].[DIM_Date]' type='table' />
+            </properties>
+          </object>
+          <object caption='DIM_MAC' id='DIM_MAC_719DF9316AAD40CAB123740A244EE863'>
+            <properties context=''>
+              <relation connection='sqlserver.00fp0wa18ksu9p12tspgk17yh5u7' name='DIM_MAC' table='[dbo].[DIM_MAC]' type='table' />
+            </properties>
+          </object>
+          <object caption='FAC_firewall_blocked' id='FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC'>
+            <properties context=''>
+              <relation connection='sqlserver.00fp0wa18ksu9p12tspgk17yh5u7' name='FAC_firewall_blocked' table='[dbo].[FAC_firewall_blocked]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[TheDate]' />
+              <expression op='[TheDate (DIM_Date)]' />
+            </expression>
+            <first-end-point guaranteed-value='true' object-id='FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC' unique-key='true' />
+            <second-end-point object-id='DIM_Date_40E3231D930E45E48B7AABCF700F78AB' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[MAC]' />
+              <expression op='[MAC (DIM_MAC)]' />
+            </expression>
+            <first-end-point guaranteed-value='true' object-id='FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC' />
+            <second-end-point guaranteed-value='true' object-id='DIM_MAC_719DF9316AAD40CAB123740A244EE863' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[cc]' />
+              <expression op='[CC]' />
+            </expression>
+            <first-end-point guaranteed-value='true' object-id='DIM_Counties_8E628A8B3E374E4A93C06D2F61061039' unique-key='true' />
+            <second-end-point object-id='FAC_firewall_blocked_567050CEAE27486CA53B15295172F0FC' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='AttackedMAC'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DIM_Counties+ (LucidLink)' name='federated.1yry0ys0920efw1euoqic0bic55p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yry0ys0920efw1euoqic0bic55p'>
+            <column datatype='string' name='[Machine Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[TheDay]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[TheMonthName]' role='dimension' type='nominal' />
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[Machine Name]' derivation='None' name='[none:Machine Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TheDay]' derivation='None' name='[none:TheDay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TheMonthName]' derivation='None' name='[none:TheMonthName:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheDay:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>31</max>
+          </filter>
+          <filter class='categorical' column='[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheMonthName:nk]'>
+            <groupfilter function='member' level='[none:TheMonthName:nk]' member='&quot;May&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheMonthName:nk]</column>
+            <column>[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheDay:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1yry0ys0920efw1euoqic0bic55p].[none:Machine Name:nk]</rows>
+        <cols>[federated.1yry0ys0920efw1euoqic0bic55p].[ctd:id:qk]</cols>
+      </table>
+      <simple-id uuid='{0493EA59-D700-45FE-A00C-ACB7348216F2}' />
+    </worksheet>
+    <worksheet name='ContrySpred'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DIM_Counties+ (LucidLink)' name='federated.1yry0ys0920efw1euoqic0bic55p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yry0ys0920efw1euoqic0bic55p'>
+            <column datatype='string' name='[cc]' role='dimension' type='nominal' />
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[cc]' derivation='None' name='[none:cc:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1yry0ys0920efw1euoqic0bic55p].[ctd:id:qk]' />
+              <text column='[federated.1yry0ys0920efw1euoqic0bic55p].[none:cc:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BE4B10DC-CD87-4326-A345-8C4417E50E83}' />
+    </worksheet>
+    <worksheet name='GeoMappAttack'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DIM_Counties+ (LucidLink)' name='federated.1yry0ys0920efw1euoqic0bic55p' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1yry0ys0920efw1euoqic0bic55p'>
+            <column datatype='integer' name='[TheDay]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[TheMonthName]' role='dimension' type='nominal' />
+            <column datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[TheDay]' derivation='None' name='[none:TheDay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TheMonthName]' derivation='None' name='[none:TheMonthName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheDay:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>30</max>
+          </filter>
+          <filter class='categorical' column='[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheMonthName:nk]'>
+            <groupfilter function='member' level='[none:TheMonthName:nk]' member='&quot;May&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheMonthName:nk]</column>
+            <column>[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheDay:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1yry0ys0920efw1euoqic0bic55p].[Longitude (generated)]' field-type='quantitative' max='20399059.683110725' min='-24160117.652263679' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1yry0ys0920efw1euoqic0bic55p].[Latitude (generated)]' field-type='quantitative' max='14990638.37080181' min='-10471749.816240963' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1yry0ys0920efw1euoqic0bic55p].[none:country:nk]' />
+              <text column='[federated.1yry0ys0920efw1euoqic0bic55p].[none:country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yry0ys0920efw1euoqic0bic55p].[Latitude (generated)]</rows>
+        <cols>[federated.1yry0ys0920efw1euoqic0bic55p].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{FD4FFA17-347B-4776-B0C8-EB2B181AD925}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='GeoMappAttack'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheDay:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheMonthName:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1yry0ys0920efw1euoqic0bic55p].[none:country:nk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{6F0867EC-553A-4D20-8A8B-D37AF5F5B556}' />
+    </window>
+    <window class='worksheet' name='ContrySpred'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EF42E0C7-4B10-4F4D-9148-C88B6941D19D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='AttackedMAC'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheDay:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1yry0ys0920efw1euoqic0bic55p].[none:TheMonthName:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{75E23FAC-246F-4D27-913D-720DB301C872}' />
+    </window>
+  </windows>
+</workbook>
