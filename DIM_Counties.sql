@@ -16,5 +16,5 @@ using (
 --  select distinct MAC into DIM_MAC from FAC_firewall_blocked
 
  select   MAC ,count(MAC)  from FAC_firewall_blocked group by mac
-
+--
  
